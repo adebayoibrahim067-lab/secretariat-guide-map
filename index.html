@@ -618,7 +618,7 @@
                 feature: layer.feature,
                 variables: {}
             };
-            layer.bindTooltip((exp_label_Point_Indexed__1_eval_expression(context) !== null?String('<div style="color: #323232; font-size: 12pt; font-family: \'Times New Roman\', sans-serif;">' + exp_label_Point_Indexed__1_eval_expression(context)).replace(/\\n/g, '<br>') + '</div>':''), {permanent: true, offset: [-0, -16], className: 'css_Point_Indexed__1'});
+            layer.bindTooltip((layer.feature.properties['Name'] !== null?String('<div style="color: #323232; font-size: 12pt; font-family: \'Times New Roman\', sans-serif;">' + layer.feature.properties['Name']).replace(/\\n/g, '<br>') + '</div>':''), {permanent: true, offset: [-0, -16], className: 'css_Point_Indexed__1'});
             labels.push(layer);
             totalMarkers += 1;
               layer.added = true;

@@ -754,30 +754,3 @@ function fnc__specialcol_(values, context) {
 function fnc_project_color(values, context) {
     return false;
 };
-
-
-
-function exp_label_Point_Indexed__1_eval_expression(context) {
-    // wordwrap(Name, 15, '')
-
-    var feature = context.feature;
-    
-    if (feature.properties) {
-        return fnc_wordwrap([feature.properties['Name'] ,15,''], context);
-    } else {
-        return fnc_wordwrap([feature['Name'] ,15,''], context);
-    }
-}
-
-
-function exp_label_Point_Indexed__1_eval_expression(context) {
-    // wordwrap(Name, 15, '')
-
-    var feature = context.feature;
-    
-    if (feature.properties) {
-        return fnc_wordwrap([feature.properties['Name'] ,15,''], context);
-    } else {
-        return fnc_wordwrap([feature['Name'] ,15,''], context);
-    }
-}
